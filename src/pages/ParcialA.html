@@ -4,45 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/parcialA.css">
-    <title>Código Mal Optimizado</title>
+    <title>Código mal Optimizado</title>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Título del Documento</h1>
-            <p>Subtítulo del Documento</p>
-        </div>
-        <div class="nav">
-            <div class="nav-item"><a href="#inicio">Inicio</a></div>
-            <div class="nav-item"><a href="#sobre">Sobre Nosotros</a></div>
-            <div class="nav-item"><a href="#servicios">Servicios</a></div>
-            <div class="nav-item"><a href="#contacto">Contacto</a></div>
-        </div>
+
+    <header class="header">
+        <h1>Título del Documento</h1>
+        <p>Subtítulo del Documento</p>
+    </header>
+    <nav class="nav">
+        <ul class="nav-item"><li><a href="#inicio">Inicio</a></li></ul>
+        <ul class="nav-item"><li><a href="#sobre">Sobre Nosotros</a></li></ul>
+        <ul class="nav-item"><li><a href="#servicios">Servicios</a></li></ul>
+        <ul class="nav-item"><li><a href="#contacto">Contacto</a></li></ul>
+    </nav>
+
+    <main class="container">
         <div class="content">
-            <div class="section">
-                <h2>Sección 1</h2>
-                <p>Este es el contenido de la sección 1. Aquí se puede incluir texto, imágenes, etc.</p>
-                <div class="figure">
+            <section class="section">
+                <article>
+                    <h2>Sección 1</h2>
+                    <p>Este es el contenido de la sección 1. Aquí se puede incluir texto, imágenes, etc.</p>
+                </article>
+                
+                <figure class="figure">
                     <img src="../assets/img/imagen1.jpg" alt="Descripción de la imagen">
-                    <div class="figcaption">Descripción de la imagen.</div>
-                </div>
-            </div>
-            <div class="section">
-                <h2>Sección 2</h2>
-                <p>Este es el contenido de la sección 2. Aquí se puede incluir texto, imágenes, etc.</p>
+                    <figcaption class="figcaption">Descripción de la imagen.</figcaption>
+                </figure>
+            </section>
+            <section class="section">
+                <article>
+                    <h2>Sección 2</h2>
+                    <p>Este es el contenido de la sección 2. Aquí se puede incluir texto, imágenes, etc.</p>
+                </article>
+                
                 <details>
                     <summary>Más información</summary>
                     <p>Contenido adicional sobre la sección 2.</p>
                 </details>
-            </div>
+            </section>
         </div>
-        <div class="aside">
+        <aside class="aside">
             <h3>Información Adicional</h3>
             <p>Este es un contenido adicional que no es parte del flujo principal.</p>
-        </div>
-        <div class="footer">
-            <p>&copy; 2024 Código Mal Optimizado. Todos los derechos reservados.</p>
-        </div>
-    </div>
+        </aside>
+        <footer class="footer">
+            <p>&copy; 2024 Código mal Optimizado. Todos los derechos reservados.</p>
+        </footer>
+    </main>
 </body>
 </html>
